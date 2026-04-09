@@ -29,5 +29,7 @@ latest_posts:
 
 My name is Yue Yu, a undergraduate student from Southwestern University of Fiancne and Economics. A incoming Economics master student in Peking University,PHBS. I study economics in Swufe, advised by [Ting Zeng](https://riem.swufe.edu.cn/info/1201/10151.htm). And my thesis is about the the effect of Delayed Retirement Policy on fertility rate and pension system. 
 
-I work with Prof.Hunag during 2025.08-2025.11 as his research assitants. We focus on a project about portfolio optimization problems in international trades.
+I worked with Prof.[Huang Ji](https://jihuang.weebly.com/) during 2025.08-2025.11 as his research assitant. We focus on a project about portfolio optimization problems in international trades. We use deep learning to solve these high-dims problems.
+
+Now my interest is about Operations Research, focusing on optimizations and related fields.
 
