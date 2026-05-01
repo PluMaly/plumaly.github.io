@@ -1,15 +1,23 @@
 ## 快速开始
 
-1. 编辑 `index.html` — 修改姓名、学校、研究方向
-2. 将个人照片放到 `assets/img/profile.jpg`（推荐 3:4 比例）
-3. 将简历 PDF 放到 `files/cv.pdf`
-4. 推送到 GitHub — 自动部署到 `plumaly.github.io`
+1. 编辑 `data/profile.json` — 修改姓名、学校、研究方向等个人信息
+2. 编辑 `data/publications.json` — 添加或修改论文
+3. 编辑 `data/cv.json` — 更新简历内容
+4. 将个人照片放到 `assets/img/profile.jpg`（推荐 3:4 比例）
+5. 将简历 PDF 放到 `files/cv.pdf`
+6. 推送到 GitHub — 自动部署到 `plumaly.github.io`
+
+> **不需要懂 HTML！** 所有内容都通过 `data/` 目录下的 JSON 文件管理，只需编辑纯文本字段即可更新网站。
 
 ## 文件结构
 
 ```
 ├── index.html                 ← 主页面（单页滚动）
 ├── 404.html
+├── data/                      ← 网站内容（只需编辑这里的文件！）
+│   ├── profile.json           ← 姓名、头衔、研究方向、简介、社交链接
+│   ├── publications.json      ← 论文列表
+│   └── cv.json                ← 教育经历、研究经历、奖项、技能
 ├── assets/
 │   ├── css/
 │   │   ├── base.css           ← 重置、颜色变量、排版
@@ -20,7 +28,8 @@
 │   │   ├── theme.js           ← 深色/浅色模式切换
 │   │   ├── scroll.js          ← 平滑滚动、导航高亮、回到顶部
 │   │   ├── filter.js          ← 论文分类筛选
-│   │   └── blog.js            ← Markdown 解析器和博客渲染
+│   │   ├── blog.js            ← Markdown 解析器和博客渲染
+│   │   └── content.js         ← 读取 JSON 数据并在首页渲染内容
 │   └── img/
 │       └── profile.jpg        ← 你的个人照片（3:4 比例）
 ├── blog/
@@ -43,15 +52,34 @@
 
 ## 如何修改网站内容
 
-### 修改姓名和基本信息
+### 修改个人信息
 
-编辑 `index.html`：
-- **姓名**：搜索 `<h1 class="hero__name">Yue Yu</h1>` — 修改名字
-- **职称**：搜索 `<p class="hero__title">Ph.D. Student ...</p>`
-- **所属机构**：搜索 `<p class="hero__affiliation">Your University ...</p>`
-- **研究方向**：搜索 `<ul class="hero__research">` — 编辑其中的 `<li>` 列表项
-- **邮箱**：搜索 `yue_yu_2004@163.com` — 替换所有出现的地方（首页和页脚各一处）
-- **社交链接**：搜索 `<ul class="social">` — 更新 GitHub、Google Scholar、LinkedIn 的链接
+编辑 `data/profile.json`：
+
+```json
+{
+  "name": "你的名字",
+  "title": "你的头衔",
+  "affiliation": {
+    "name": "学校/机构名称",
+    "url": "https://学校网址"
+  },
+  "email": "你的邮箱",
+  "researchInterests": [
+    "研究方向 1",
+    "研究方向 2"
+  ],
+  "bio": [
+    "第一段个人简介（可以使用 <strong>加粗</strong> HTML 标签）",
+    "第二段个人简介"
+  ],
+  "socialLinks": [
+    { "platform": "GitHub", "url": "https://github.com/你的用户名", "icon": "github" },
+    { "platform": "Google Scholar", "url": "你的 Google Scholar 链接", "icon": "scholar" },
+    { "platform": "LinkedIn", "url": "你的 LinkedIn 链接", "icon": "linkedin" }
+  ]
+}
+```
 
 ### 修改个人照片
 
@@ -59,61 +87,72 @@
 
 ### 添加/编辑论文
 
-每篇论文在 `index.html` 中是一个 `<li class="publication__card">`。关键结构：
+编辑 `data/publications.json`，每篇论文格式如下：
 
-```html
-<li class="publication__card" data-category="journal">  <!-- journal / conference / working -->
-  <article class="publication__main" aria-expanded="false">
-    <!-- 缩略图，点击可在新窗口打开大图 -->
-    <a class="publication__thumbnail-link" href="images/publications/1.svg" target="_blank">
-      <img class="publication__thumbnail" src="images/publications/1.svg" ... />
-    </a>
-    <div class="publication__info">
-      <h3 class="publication__title">论文标题</h3>
-      <p class="publication__authors">
-        <span class="publication__author--self">Yue Yu</span>, 其他作者
-        <!-- ↑ 用这个 span 包裹你自己的名字来高亮显示 -->
-      </p>
-      <p class="publication__venue">期刊名称, 年份</p>
-      <div class="publication__links">
-        <a class="publication__link" href="链接">PDF</a>
-        <a class="publication__link" href="链接">DOI</a>
-      </div>
-    </div>
-    <span class="publication__expand-icon">▼</span>
-  </article>
-  <div class="publication__abstract">
-    <p class="publication__abstract-text">摘要内容...</p>
-  </div>
-</li>
+```json
+{
+  "category": "journal",
+  "title": "论文标题",
+  "authors": [
+    { "name": "你的名字", "self": true },
+    { "name": "合作者名字", "self": false }
+  ],
+  "venue": "期刊名, vol. 42, pp. 123–145, 2026",
+  "thumbnail": "images/publications/1.svg",
+  "links": [
+    { "label": "PDF", "url": "https://..." },
+    { "label": "DOI", "url": "https://..." },
+    { "label": "Code", "url": "https://..." }
+  ],
+  "abstract": "论文摘要……"
+}
 ```
 
-操作步骤：
-1. 复制一个已有的论文条目
-2. 设置 `data-category` 为 `journal`、`conference` 或 `working`
-3. 将缩略图放到 `images/publications/` 目录
-4. 用 `<span class="publication__author--self">` 包裹你自己的名字
+- `"category"` 设为 `"journal"`、`"conference"` 或 `"working"`
+- `"self": true` 的那位作者名字会高亮显示
+- `"links"` 可以任意增减（PDF / DOI / arXiv / Code 等）
+- 将缩略图放到 `images/publications/` 目录
 
 ### 修改简历内容
 
-编辑 `index.html` 中的 CV 区块。每个条目格式如下：
+编辑 `data/cv.json`：
 
-```html
-<div class="cv__entry">
-  <div class="cv__entry-header">
-    <span class="cv__entry-title">职位/学位名称</span>
-    <span class="cv__entry-date">2024 – 至今</span>
-  </div>
-  <p class="cv__entry-subtitle">机构名称</p>
-  <div class="cv__entry-desc">
-    <ul>
-      <li>描述内容</li>
-    </ul>
-  </div>
-</div>
+```json
+{
+  "cvPdfUrl": "files/cv.pdf",
+  "education": [
+    {
+      "degree": "Ph.D. in Operations Research",
+      "date": "2024 – Present",
+      "institution": "大学名称，院系",
+      "details": [
+        "研究方向：大规模优化、内点法",
+        "导师：Prof. XXX"
+      ]
+    }
+  ],
+  "researchExperience": [
+    {
+      "role": "Research Assistant",
+      "date": "2024 – Present",
+      "institution": "实验室名称，大学",
+      "details": [
+        "工作内容 1",
+        "工作内容 2"
+      ]
+    }
+  ],
+  "awards": [
+    { "title": "奖项名称", "date": "2024" }
+  ],
+  "skills": [
+    { "label": "Programming", "value": "Python, Julia, C/C++, MATLAB" },
+    { "label": "Languages", "value": "Chinese (native), English (fluent)" }
+  ]
+}
 ```
 
-要替换简历 PDF 下载链接，将你的 PDF 文件放到 `files/cv.pdf`。
+要替换简历 PDF，将你的 PDF 文件放到 `files/cv.pdf`。
 
 ### 添加博客文章
 
