@@ -1,0 +1,20 @@
+[
+  {
+    "file": "2026-05-01-large-scale-lp.md",
+    "title": "Large-Scale LP Optimization Algorithms",
+    "date": "2026-05-01",
+    "summary": "A survey of computational methods for large-scale linear programming, from interior-point methods to first-order approaches."
+  },
+  {
+    "file": "2026-04-20-primal-dual-ipm.md",
+    "title": "A Practical Introduction to Primal-Dual Interior-Point Methods",
+    "date": "2026-04-20",
+    "summary": "Deriving the primal-dual IPM framework from scratch, with working Julia and Python implementations."
+  },
+  {
+    "file": "2026-03-15-getting-started-julia.md",
+    "title": "Getting Started with Julia for Optimization",
+    "date": "2026-03-15",
+    "summary": "A practical guide to using Julia and JuMP for modeling and solving optimization problems."
+  }
+]

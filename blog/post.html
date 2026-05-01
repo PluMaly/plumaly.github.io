@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog Post — Yue Yu</title>
+    <meta name="description" content="Blog post by Yue Yu" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/blog.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚛</text></svg>" />
+  </head>
+  <body>
+    <a class="skip-link" href="#post-content">Skip to content</a>
+    <div class="progress" id="progress-bar"></div>
+
+    <header>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav__inner">
+          <a class="nav__brand" href="../index.html#home">Yue Yu</a>
+          <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+          </button>
+          <ul class="nav__links" id="nav-links" role="menubar">
+            <li role="none"><a class="nav__link" href="../index.html#home" role="menuitem">Home</a></li>
+            <li role="none"><a class="nav__link" href="../index.html#publications" role="menuitem">Publications</a></li>
+            <li role="none"><a class="nav__link nav__link--active" href="index.html" role="menuitem">Blog</a></li>
+            <li role="none"><a class="nav__link" href="../index.html#cv" role="menuitem">CV</a></li>
+            <li role="none">
+              <button class="nav__theme-btn" id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="nav-spacer"></div>
+
+    <main class="container">
+      <article id="post-content" aria-label="Blog post"></article>
+      <p>
+        <a class="post__back" href="index.html">← Back to blog</a>
+      </p>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <ul class="footer__links">
+          <li><a class="footer__link" href="mailto:yue_yu_2004@163.com">Email</a></li>
+          <li><a class="footer__link" href="https://github.com/PluMage" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+        <p class="footer__updated">Last updated: May 1, 2026</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/js/scroll.js"></script>
+    <script src="../assets/js/blog.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [["$", "$"]],
+          displayMath: [["$$", "$$"]],
+        },
+        startup: {
+          typeset: false,
+        },
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var filename = params.get("post");
+        Blog.loadPost("post-content", filename).then(function () {
+          if (window.MathJax && MathJax.typesetPromise) {
+            return MathJax.typesetPromise();
+          }
+        }).catch(function (e) {
+          console.warn("MathJax render:", e);
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="180" viewBox="0 0 140 180">
+  <rect width="140" height="180" fill="#f8f5f2"/>
+  <text x="70" y="80" text-anchor="middle" fill="#5e5868" font-family="Georgia,serif" font-size="13" font-style="italic">Working</text>
+  <text x="70" y="100" text-anchor="middle" fill="#5e5868" font-family="Georgia,serif" font-size="13" font-style="italic">Paper</text>
+  <line x1="40" y1="130" x2="100" y2="130" stroke="#5e5868" stroke-width="1" opacity="0.4"/>
+  <text x="70" y="155" text-anchor="middle" fill="#928b9a" font-family="Inter,sans-serif" font-size="11">2026</text>
+</svg>

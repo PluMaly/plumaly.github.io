@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="180" viewBox="0 0 140 180">
+  <rect width="140" height="180" fill="#fdf2f3"/>
+  <text x="70" y="85" text-anchor="middle" fill="#8b1a2b" font-family="Georgia,serif" font-size="12" font-style="italic">ICML</text>
+  <text x="70" y="105" text-anchor="middle" fill="#8b1a2b" font-family="Georgia,serif" font-size="12" font-style="italic">2025</text>
+  <line x1="40" y1="130" x2="100" y2="130" stroke="#8b1a2b" stroke-width="1" opacity="0.4"/>
+  <text x="70" y="155" text-anchor="middle" fill="#5e5868" font-family="Inter,sans-serif" font-size="11">Conference</text>
+</svg>
