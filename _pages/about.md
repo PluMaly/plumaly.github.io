@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.phbs.pku.edu.cn'>PHBS, Peking University</a> | Incoming Master Student of Economics 
+subtitle: <a href='https://www.phbs.pku.edu.cn'>PHBS, Peking University</a> | Incoming Master Student of Economics
 profile:
   align: right
   image: prof_pic.jpg
@@ -26,9 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-My name is Yue Yu, a undergraduate student from Southwestern University of Fiancne and Economics. A incoming Economics master student in Peking University,PHBS. I study economics in Swufe, advised by [Ting Zeng](https://riem.swufe.edu.cn/info/1201/10151.htm). And my thesis is about the the effect of Delayed Retirement Policy on fertility rate and pension system. 
+My name is Yue Yu, a undergraduate student from Southwestern University of Fiancne and Economics. A incoming Economics master student in Peking University,PHBS. I study economics in Swufe, advised by [Ting Zeng](https://riem.swufe.edu.cn/info/1201/10151.htm). And my thesis is about the the effect of Delayed Retirement Policy on fertility rate and pension system.
 
 I worked with Prof.[Huang Ji](https://jihuang.weebly.com/) during 2025.08-2025.11 as his research assitant. We focus on a project about portfolio optimization problems in international trades. We use deep learning to solve these high-dims problems.
 
 Now my interest is about Operations Research, focusing on optimizations and related fields.
-
