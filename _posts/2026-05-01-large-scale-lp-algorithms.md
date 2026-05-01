@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "大规模线性规划算法概述"
-date: 2026-05-02
+date: 2026-05-01 10:00:00
 description: 从单纯形法到内点法，再到列生成与 ADMM，介绍求解大规模线性规划问题的核心算法
 categories: notes
 ---
