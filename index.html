@@ -58,67 +58,7 @@
         <div class="container">
           <h2 class="sr-only" id="home-heading">About</h2>
 
-          <div class="hero">
-            <div class="hero__avatar" aria-hidden="true">
-              <img
-                class="hero__avatar-img"
-                src="assets/img/profile.jpg"
-                alt="Yue Yu"
-                onerror="this.style.display='none';this.parentElement.appendChild(document.createTextNode('YY'))"
-              />
-            </div>
-
-            <div class="hero__text">
-              <h1 class="hero__name">Yue Yu</h1>
-              <p class="hero__title">Incoming Master Student in Economics</p>
-              <p class="hero__affiliation"><a href="https://www.phbs.pku.edu.cn/" target="_blank" rel="noopener">Peking University PHBS</a></p>
-
-              <ul class="hero__research" aria-label="Research interests">
-                <li>Large-scale optimization theory and Applications</li>
-                <li>Decomposition algorithms</li>
-              </ul>
-
-              <p class="hero__email">
-                <a href="mailto:yue_yu_2004@163.com">yue_yu_2004@163.com</a>
-              </p>
-
-              <ul class="social" aria-label="Academic social links">
-                <li>
-                  <a class="social__link" href="https://github.com/plumaly" target="_blank" rel="noopener">
-                    <svg class="social__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                    GitHub
-                  </a>
-                </li>
-                <li>
-                  <a class="social__link" href="#" target="_blank" rel="noopener">
-                    <svg class="social__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a12 12 0 100-24 12 12 0 000 24zM9.8 18.9a9.6 9.6 0 006.7-9c0-.15 0-.3-.05-.44a4.8 4.8 0 001.15-1.23 4.7 4.7 0 01-1.35.38 2.4 2.4 0 001.03-1.32 4.6 4.6 0 01-1.48.58 2.3 2.3 0 00-1.7-.75c-1.3 0-2.35 1.08-2.35 2.4 0 .2.02.38.06.55a6.6 6.6 0 01-4.85-2.5 2.5 2.5 0 00-.32 1.23c0 .83.41 1.56 1.03 1.98a2.2 2.2 0 01-1.06-.3v.03c0 1.17.8 2.14 1.88 2.36a2.2 2.2 0 01-1.06.04 2.37 2.37 0 002.2 1.68 4.64 4.64 0 01-3.47.99 6.5 6.5 0 003.6 1.07"/></svg>
-                    Google Scholar
-                  </a>
-                </li>
-                <li>
-                  <a class="social__link" href="#" target="_blank" rel="noopener">
-                    <svg class="social__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    LinkedIn
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Bio / Self-introduction -->
-          <div class="bio">
-            <p>
-              I am and Incoming Master student in Economics at <strong>Peking University</strong>,
-              working on large-scale optimization algorithms. My research focuses on designing
-              efficient computational methods for linear and convex programming problems
-              with millions of variables and constraints.
-            </p>
-            <p>
-              Before starting my master degree, I earned my B.S. in Economics and honor degree in Mathematics at Southwestern University of Financial and Economics.</Math>. I enjoy bridging
-              the gap between optimization theory and high-performance computing.
-              Feel free to reach out if you'd like to discuss research ideas or collaborate.
-            </p>
-          </div>
+          <div id="home-content"></div>
         </div>
       </section>
 
@@ -137,114 +77,8 @@
             <button class="filter__btn" data-filter="working" role="tab" aria-selected="false">Working Papers</button>
           </div>
 
-          <!-- Publication list -->
-          <ul class="publication" role="list">
-            <!-- Pub 1: Journal -->
-            <li class="publication__card" data-category="journal">
-              <article class="publication__main" aria-expanded="false">
-                <a class="publication__thumbnail-link" href="images/publications/1.svg" target="_blank" rel="noopener" aria-label="View publication image">
-                  <img
-                    class="publication__thumbnail"
-                    src="images/publications/1.svg"
-                    alt="Publication thumbnail"
-                    loading="lazy"
-                    onerror="this.style.display='none'"
-                  />
-                </a>
-                <div class="publication__info">
-                  <h3 class="publication__title">Large-Scale LP Optimization: Algorithms and Applications</h3>
-                  <p class="publication__authors">
-                    <span class="publication__author--self">Yue Yu</span>, Coauthor One, Coauthor Two
-                  </p>
-                  <p class="publication__venue">Journal of Optimization, vol. 42, pp. 123–145, 2026</p>
-                  <div class="publication__links">
-                    <a class="publication__link" href="#" target="_blank" rel="noopener">PDF</a>
-                    <a class="publication__link" href="#" target="_blank" rel="noopener">DOI</a>
-                    <a class="publication__link" href="#" target="_blank" rel="noopener">Code</a>
-                  </div>
-                </div>
-                <span class="publication__expand-icon" aria-hidden="true">▼</span>
-              </article>
-              <div class="publication__abstract">
-                <p class="publication__abstract-text">
-                  This paper presents a comprehensive survey of large-scale linear programming algorithms,
-                  with a focus on interior-point methods and decomposition techniques. We propose a novel
-                  hybrid approach that combines primal-dual path-following with Benders decomposition,
-                  achieving significant speedups on problems with millions of variables and constraints.
-                  Experimental results on benchmark problems demonstrate the effectiveness of our approach.
-                </p>
-              </div>
-            </li>
-
-            <!-- Pub 2: Conference -->
-            <li class="publication__card" data-category="conference">
-              <article class="publication__main" aria-expanded="false">
-                <a class="publication__thumbnail-link" href="images/publications/2.svg" target="_blank" rel="noopener" aria-label="View publication image">
-                  <img
-                    class="publication__thumbnail"
-                    src="images/publications/2.svg"
-                    alt="Publication thumbnail"
-                    loading="lazy"
-                    onerror="this.style.display='none'"
-                  />
-                </a>
-                <div class="publication__info">
-                  <h3 class="publication__title">Efficient First-Order Methods for Distributed Optimization</h3>
-                  <p class="publication__authors">
-                    Author One, <span class="publication__author--self">Yue Yu</span>, Author Three
-                  </p>
-                  <p class="publication__venue">International Conference on Machine Learning (ICML), 2025</p>
-                  <div class="publication__links">
-                    <a class="publication__link" href="#" target="_blank" rel="noopener">PDF</a>
-                    <a class="publication__link" href="#" target="_blank" rel="noopener">arXiv</a>
-                  </div>
-                </div>
-                <span class="publication__expand-icon" aria-hidden="true">▼</span>
-              </article>
-              <div class="publication__abstract">
-                <p class="publication__abstract-text">
-                  We develop a novel first-order optimization framework for distributed settings,
-                  leveraging primal-dual hybrid gradient methods with adaptive step sizes.
-                  Our approach achieves state-of-the-art convergence rates while maintaining
-                  low communication overhead across compute nodes.
-                </p>
-              </div>
-            </li>
-
-            <!-- Pub 3: Working -->
-            <li class="publication__card" data-category="working">
-              <article class="publication__main" aria-expanded="false">
-                <a class="publication__thumbnail-link" href="images/publications/3.svg" target="_blank" rel="noopener" aria-label="View publication image">
-                  <img
-                    class="publication__thumbnail"
-                    src="images/publications/3.svg"
-                    alt="Publication thumbnail"
-                    loading="lazy"
-                    onerror="this.style.display='none'"
-                  />
-                </a>
-                <div class="publication__info">
-                  <h3 class="publication__title">On the Convergence of Inexact Interior-Point Methods</h3>
-                  <p class="publication__authors">
-                    <span class="publication__author--self">Yue Yu</span>
-                  </p>
-                  <p class="publication__venue">Working Paper, 2026</p>
-                  <div class="publication__links">
-                    <a class="publication__link" href="#" target="_blank" rel="noopener">PDF</a>
-                  </div>
-                </div>
-                <span class="publication__expand-icon" aria-hidden="true">▼</span>
-              </article>
-              <div class="publication__abstract">
-                <p class="publication__abstract-text">
-                  We study the convergence properties of interior-point methods when the Newton
-                  steps are computed inexactly. We establish conditions under which superlinear
-                  convergence is preserved and provide practical guidelines for choosing the
-                  termination criteria for iterative linear solvers within IPM frameworks.
-                </p>
-              </div>
-            </li>
-          </ul>
+          <!-- Publication list (loaded from data/publications.json) -->
+          <ul class="publication" id="publications-content" role="list"></ul>
         </div>
       </section>
 
@@ -268,99 +102,7 @@
         <div class="container">
           <h2 class="section__title" id="cv-heading">Curriculum Vitae</h2>
 
-          <a class="cv__download" href="files/cv.pdf" download>
-            <svg class="cv__download-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-            Download Full CV (PDF)
-          </a>
-
-          <!-- Education -->
-          <div class="cv__section">
-            <h3 class="cv__section-title">Education</h3>
-            <div class="cv__entry">
-              <div class="cv__entry-header">
-                <span class="cv__entry-title">Ph.D. in Operations Research</span>
-                <span class="cv__entry-date">2024 – Present</span>
-              </div>
-              <p class="cv__entry-subtitle">Your University, Department of Operations Research</p>
-              <div class="cv__entry-desc">
-                <ul>
-                  <li>Research focus: large-scale optimization, interior-point methods, first-order algorithms</li>
-                  <li>Advisor: Prof. Advisor Name</li>
-                </ul>
-              </div>
-            </div>
-            <div class="cv__entry">
-              <div class="cv__entry-header">
-                <span class="cv__entry-title">B.S. in Mathematics</span>
-                <span class="cv__entry-date">2020 – 2024</span>
-              </div>
-              <p class="cv__entry-subtitle">Your University, School of Mathematics</p>
-              <div class="cv__entry-desc">
-                <ul>
-                  <li>Thesis: "Efficient Algorithms for Large-Scale Linear Programming"</li>
-                  <li>GPA: 3.9/4.0</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Research Experience -->
-          <div class="cv__section">
-            <h3 class="cv__section-title">Research Experience</h3>
-            <div class="cv__entry">
-              <div class="cv__entry-header">
-                <span class="cv__entry-title">Research Assistant</span>
-                <span class="cv__entry-date">2024 – Present</span>
-              </div>
-              <p class="cv__entry-subtitle">Optimization Lab, Your University</p>
-              <div class="cv__entry-desc">
-                <ul>
-                  <li>Developed efficient algorithms for large-scale linear programming problems</li>
-                  <li>Implemented benchmark suite for solver comparison across different problem structures</li>
-                  <li>Published 3 papers in top optimization journals and conferences</li>
-                </ul>
-              </div>
-            </div>
-            <div class="cv__entry">
-              <div class="cv__entry-header">
-                <span class="cv__entry-title">Summer Research Intern</span>
-                <span class="cv__entry-date">June – Aug 2023</span>
-              </div>
-              <p class="cv__entry-subtitle">Research Lab, Institution Name</p>
-              <div class="cv__entry-desc">
-                <ul>
-                  <li>Designed and implemented distributed optimization algorithms</li>
-                  <li>Contributed to open-source optimization library</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Awards -->
-          <div class="cv__section">
-            <h3 class="cv__section-title">Honors &amp; Awards</h3>
-            <div class="cv__entry">
-              <div class="cv__entry-header">
-                <span class="cv__entry-title">Outstanding Graduate Thesis Award</span>
-                <span class="cv__entry-date">2024</span>
-              </div>
-            </div>
-            <div class="cv__entry">
-              <div class="cv__entry-header">
-                <span class="cv__entry-title">University Scholarship</span>
-                <span class="cv__entry-date">2020 – 2024</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Skills -->
-          <div class="cv__section">
-            <h3 class="cv__section-title">Skills</h3>
-            <p><strong>Programming:</strong> Python, Julia, C/C++, MATLAB</p>
-            <p><strong>Optimization Tools:</strong> Gurobi, CPLEX, Ipopt, JuMP, CVXPY</p>
-            <p><strong>Other:</strong> LaTeX, Git, Docker, Linux</p>
-            <p><strong>Languages:</strong> Chinese (native), English (fluent)</p>
-          </div>
+          <div id="cv-content"></div>
         </div>
       </section>
     </main>
@@ -385,7 +127,11 @@
     <script src="assets/js/scroll.js"></script>
     <script src="assets/js/filter.js"></script>
     <script src="assets/js/blog.js"></script>
+    <script src="assets/js/content.js"></script>
     <script>
+      Content.renderProfile("home-content");
+      Content.renderPublications("publications-content");
+      Content.renderCV("cv-content");
       Blog.loadBlogList("blog-list", "blog/");
     </script>
   </body>

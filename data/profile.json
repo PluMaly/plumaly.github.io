@@ -1,0 +1,34 @@
+{
+  "name": "Yue Yu",
+  "title": "Incoming Master Student in Economics",
+  "affiliation": {
+    "name": "Peking University PHBS",
+    "url": "https://www.phbs.pku.edu.cn/"
+  },
+  "email": "yue_yu_2004@163.com",
+  "researchInterests": [
+    "Large-scale optimization theory and Applications",
+    "Decomposition algorithms"
+  ],
+  "bio": [
+    "I am an Incoming Master student in Economics at <strong>Peking University</strong>, working on large-scale optimization algorithms. My research focuses on designing efficient computational methods for linear and convex programming problems with millions of variables and constraints.",
+    "Before starting my master degree, I earned my B.S. in Economics and honor degree in Mathematics at Southwestern University of Financial and Economics. I enjoy bridging the gap between optimization theory and high-performance computing. Feel free to reach out if you'd like to discuss research ideas or collaborate."
+  ],
+  "socialLinks": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/plumaly",
+      "icon": "github"
+    },
+    {
+      "platform": "Google Scholar",
+      "url": "#",
+      "icon": "scholar"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "#",
+      "icon": "linkedin"
+    }
+  ]
+}

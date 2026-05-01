@@ -1,0 +1,48 @@
+[
+  {
+    "category": "journal",
+    "title": "Large-Scale LP Optimization: Algorithms and Applications",
+    "authors": [
+      { "name": "Yue Yu", "self": true },
+      { "name": "Coauthor One", "self": false },
+      { "name": "Coauthor Two", "self": false }
+    ],
+    "venue": "Journal of Optimization, vol. 42, pp. 123–145, 2026",
+    "thumbnail": "images/publications/1.svg",
+    "links": [
+      { "label": "PDF", "url": "#" },
+      { "label": "DOI", "url": "#" },
+      { "label": "Code", "url": "#" }
+    ],
+    "abstract": "This paper presents a comprehensive survey of large-scale linear programming algorithms, with a focus on interior-point methods and decomposition techniques. We propose a novel hybrid approach that combines primal-dual path-following with Benders decomposition, achieving significant speedups on problems with millions of variables and constraints. Experimental results on benchmark problems demonstrate the effectiveness of our approach."
+  },
+  {
+    "category": "conference",
+    "title": "Efficient First-Order Methods for Distributed Optimization",
+    "authors": [
+      { "name": "Author One", "self": false },
+      { "name": "Yue Yu", "self": true },
+      { "name": "Author Three", "self": false }
+    ],
+    "venue": "International Conference on Machine Learning (ICML), 2025",
+    "thumbnail": "images/publications/2.svg",
+    "links": [
+      { "label": "PDF", "url": "#" },
+      { "label": "arXiv", "url": "#" }
+    ],
+    "abstract": "We develop a novel first-order optimization framework for distributed settings, leveraging primal-dual hybrid gradient methods with adaptive step sizes. Our approach achieves state-of-the-art convergence rates while maintaining low communication overhead across compute nodes."
+  },
+  {
+    "category": "working",
+    "title": "On the Convergence of Inexact Interior-Point Methods",
+    "authors": [
+      { "name": "Yue Yu", "self": true }
+    ],
+    "venue": "Working Paper, 2026",
+    "thumbnail": "images/publications/3.svg",
+    "links": [
+      { "label": "PDF", "url": "#" }
+    ],
+    "abstract": "We study the convergence properties of interior-point methods when the Newton steps are computed inexactly. We establish conditions under which superlinear convergence is preserved and provide practical guidelines for choosing the termination criteria for iterative linear solvers within IPM frameworks."
+  }
+]

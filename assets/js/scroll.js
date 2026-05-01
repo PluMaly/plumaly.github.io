@@ -101,11 +101,12 @@
     }
   }
 
-  /* Publication card click — toggle on main area */
-  document.querySelectorAll(".publication__main").forEach(function (main) {
-    main.addEventListener("click", function () {
-      toggleCard(this.closest(".publication__card"));
-    });
+  /* Publication card click — use event delegation since cards load async */
+  document.addEventListener("click", function (e) {
+    var main = e.target.closest(".publication__main");
+    if (main) {
+      toggleCard(main.closest(".publication__card"));
+    }
   });
 
 })();

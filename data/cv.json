@@ -1,0 +1,60 @@
+{
+  "cvPdfUrl": "files/cv.pdf",
+  "education": [
+    {
+      "degree": "Ph.D. in Operations Research",
+      "date": "2024 – Present",
+      "institution": "Your University, Department of Operations Research",
+      "details": [
+        "Research focus: large-scale optimization, interior-point methods, first-order algorithms",
+        "Advisor: Prof. Advisor Name"
+      ]
+    },
+    {
+      "degree": "B.S. in Mathematics",
+      "date": "2020 – 2024",
+      "institution": "Your University, School of Mathematics",
+      "details": [
+        "Thesis: \"Efficient Algorithms for Large-Scale Linear Programming\"",
+        "GPA: 3.9/4.0"
+      ]
+    }
+  ],
+  "researchExperience": [
+    {
+      "role": "Research Assistant",
+      "date": "2024 – Present",
+      "institution": "Optimization Lab, Your University",
+      "details": [
+        "Developed efficient algorithms for large-scale linear programming problems",
+        "Implemented benchmark suite for solver comparison across different problem structures",
+        "Published 3 papers in top optimization journals and conferences"
+      ]
+    },
+    {
+      "role": "Summer Research Intern",
+      "date": "June – Aug 2023",
+      "institution": "Research Lab, Institution Name",
+      "details": [
+        "Designed and implemented distributed optimization algorithms",
+        "Contributed to open-source optimization library"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Outstanding Graduate Thesis Award",
+      "date": "2024"
+    },
+    {
+      "title": "University Scholarship",
+      "date": "2020 – 2024"
+    }
+  ],
+  "skills": [
+    { "label": "Programming", "value": "Python, Julia, C/C++, MATLAB" },
+    { "label": "Optimization Tools", "value": "Gurobi, CPLEX, Ipopt, JuMP, CVXPY" },
+    { "label": "Other", "value": "LaTeX, Git, Docker, Linux" },
+    { "label": "Languages", "value": "Chinese (native), English (fluent)" }
+  ]
+}
